@@ -1,0 +1,22 @@
+@charset "UTF-8";
+.banner {
+    /* https://www.nombresuniverso.com/blog/nebulosa-tulipan-sh2-101-3/ */
+    background-image: url(images/fondo-rojo.jpg);
+}
+
+.banner-title {
+    color: white;
+}
+
+.vertical-nav {
+    display: block;
+}
+
+.primary-jumbo {
+    font-size: 60px;
+    font-family: 'Segoe UI';
+}
+
+.tx-white{
+    color: white;
+}
