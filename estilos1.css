@@ -17,6 +17,48 @@
     font-family: 'Segoe UI';
 }
 
-.tx-white{
+.tx-white {
     color: white;
+}
+
+.news-card {
+    transition: transform 1s;
+    padding-bottom: 5%;
+    padding-top: 3%;
+    background-color: rgb(221, 218, 213);
+
+}
+
+.reference{
+    font-family: 'Times New Roman';
+}
+
+.news-card h1{
+    text-align: center;
+}
+
+.news-card:hover {
+    transform: scale(1.1);
+    background-image: linear-gradient(rgb(133, 33, 33), rgb(177, 151, 151));
+    color: white;
+    z-index: 1;
+}
+
+.place-card {
+    z-index: -1;
+    text-align: center;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+    background-color: rgb(221, 218, 213);
+
+}
+
+.place-card p {
+    text-align: left;
+}
+
+.place-card:hover {
+    background-image: linear-gradient(red, rgb(185, 98, 98));
+    color: white;
+    z-index: 1;
 }
