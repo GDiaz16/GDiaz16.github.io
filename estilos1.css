@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .banner {
     /* https://www.nombresuniverso.com/blog/nebulosa-tulipan-sh2-101-3/ */
-    background-image: url(Images/fondo-rojo.jpg);
+    background-image: url(images/fondo-rojo.jpg);
 }
 
 .banner-title {
@@ -26,14 +26,13 @@
     padding-bottom: 5%;
     padding-top: 3%;
     background-color: rgb(221, 218, 213);
-
 }
 
-.reference{
+.reference {
     font-family: 'Times New Roman';
 }
 
-.news-card h1{
+.news-card h1 {
     text-align: center;
 }
 
@@ -50,15 +49,58 @@
     padding-bottom: 5%;
     margin-bottom: 5%;
     background-color: rgb(221, 218, 213);
-
 }
 
 .place-card p {
     text-align: left;
+    padding: 20px;
+}
+
+.place-card img {
+    width: 90%;
+    height: 90%;
 }
 
 .place-card:hover {
     background-image: linear-gradient(red, rgb(185, 98, 98));
     color: white;
     z-index: 1;
+}
+
+.flex-row-ch {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.flex-col-ch {
+    flex: 33%;
+    /*     border: 1px solid black;
+ */
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+}
+
+
+/* Responsivines--------------------- */
+@media only screen and (max-width: 800px){
+    .flex-col-ch{
+        flex: 50%;
+    }
+    .flex-row-ch{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .flex-col-ch{
+        flex: 100%;
+    }
+    .flex-row-ch{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
 }
