@@ -141,14 +141,14 @@
     display: flex;
     flex-direction: column;
     width: 33%;
-    padding: 8px;
+    padding: 10px;
     height: 0%;
 }
 
 .ch-card {
     text-align: left;
     background-color: rgb(221, 218, 213);
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .ch-card h4 {
@@ -205,7 +205,6 @@
     background-color: rgb(221, 218, 213);
     margin: 2%;
     position: relative;
-    height: 20%;
 }
 
 .evt-card img {
@@ -276,8 +275,8 @@
 }
 
 .hi-info img {
-    width: 40%;
-    height: 40%;
+    width: 50%;
+    height: 50%;
 }
 
 /* Selectores */
@@ -290,9 +289,15 @@
     display: block;
     /*position: absolute; */
     position: fixed;
-    top: 25%;
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    top: 8%;
     left: 25%;
     right: 20%;
+    background-image: linear-gradient(red, rgb(185, 98, 98));
+    color: white;
 }
 
 /* Creditos-------------------------- */
