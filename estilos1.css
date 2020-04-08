@@ -141,13 +141,14 @@
     display: flex;
     flex-direction: column;
     width: 33%;
-    padding: 2%;
+    padding: 8px;
     height: 0%;
 }
 
 .ch-card {
     text-align: left;
     background-color: rgb(221, 218, 213);
+    margin-bottom: 16px;
 }
 
 .ch-card h4 {
@@ -287,8 +288,9 @@
 
 .hi:hover .hi-info {
     display: block;
-    position: absolute;
-    top: -5%;
+    /*position: absolute; */
+    position: fixed;
+    top: 25%;
     left: 25%;
     right: 20%;
 }
@@ -316,8 +318,9 @@
 }
 
 .cred-row ul li {
-/*     border: black solid 1px;
- */    padding: 8px;
+    /*     border: black solid 1px;
+ */
+    padding: 8px;
 }
 
 .cred-row ul li:hover {
