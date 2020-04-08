@@ -142,7 +142,7 @@
     flex-direction: column;
     width: 33%;
     padding: 2%;
-    height: 100%;
+    height: 0%;
 }
 
 .ch-card {
@@ -292,7 +292,8 @@
 }
 
 /* Creditos-------------------------- */
-.cred-row{
+
+.cred-row {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -300,18 +301,27 @@
     padding-right: 10%;
     margin: auto;
 }
-.cred-col{
+
+.cred-col {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
 }
-.cred-row ul{
+
+.cred-row ul {
     list-style: none;
 }
-.cred-row ul li{
-    background-color: wheat;
+
+.cred-row ul li {
+/*     border: black solid 1px;
+ */    padding: 8px;
 }
+
+.cred-row ul li:hover {
+    background-color: rgb(219, 196, 188);
+}
+
 /* Responsivines--------------------- */
 
 @media only screen and (max-width: 1000px) {
