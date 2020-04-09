@@ -40,7 +40,7 @@
 
 .news-card:hover {
     transform: scale(1.1);
-    background-image: linear-gradient(rgb(133, 33, 33), rgb(177, 151, 151));
+    background-image: linear-gradient(red, rgb(185, 98, 98));
     color: white;
     z-index: 1;
 }
