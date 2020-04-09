@@ -193,11 +193,12 @@
     margin: auto;
 }
 
+
+
 .flex-col-evt {
     display: flex;
     flex-direction: column;
     width: 50%;
-    height: 100%;
 }
 
 .evt-card {
@@ -205,11 +206,17 @@
     background-color: rgb(221, 218, 213);
     margin: 2%;
     position: relative;
+    height: 100%;
 }
 
 .evt-card img {
     width: 100%;
-    height: 80%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#ancla1{
+    padding-top: 50px;
 }
 
 /* Selectores */
@@ -239,7 +246,9 @@
 }
 
 .evt-info .btn-source {
-    margin-left: 40%;
+    margin-left: 46%;
+    width: 45px;
+    text-align: left;
 }
 
 /* Historia del universo marvel---------------- */
