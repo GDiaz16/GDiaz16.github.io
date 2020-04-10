@@ -3,135 +3,133 @@
 
 <head>
   <meta charset="UTF-8" />
+  <!-- viewport utilizado para permitir el renderizado de la pagina en dispositivos mas pequeños -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Se hace referencia al framework de Bootstrap, sin embargo solo se usa para hacer el navbar
+  Las filas y columnas son hechas con css nativo usando Flex-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+  <!-- Referencia a la hoja de estilos -->
   <link href="estilos1.css" rel="stylesheet" type="text/css">
-  <title>Document</title>
+  <!-- Logotipo para la barra de pestañas -->
+  <link rel="shortcut icon" href="Images/icon.jpg" type="image/x-icon">
+  <!-- Titulo de la pagina -->
+  <title>Universo Marvel</title>
 </head>
 
 <body>
-  <!-- Encabezado en todas las paginas --------------------------------------------------->
+
+  <!-- Barra de navegación superior (Bootstrap)-->
+  <div class="row no-gutters">
+    <div class="col-md-12">
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 
 
-  <div class=" ">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <!-- Solo se mantiene activo el boton de la pagina actual -->
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="page1.html">Universo fisico</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page2.html">Personajes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page3.html">Actividades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page4.html">Historia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page5.html">Créditos</a>
+          </li>
+        </ul>
+        <a class="navbar-brand"><img src="Images/logo-marvel.png" height="20" width="80"> </a>
+      </nav>
 
-    <!-- Menu de botones -->
-    <div class="row">
-      <div class="col-md-12">
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-
-
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="page1.html">Universo fisico</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="page2.html">Personajes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="page3.html">Eventos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="page4.html">Historia</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="page5.html">Créditos</a>
-            </li>
-          </ul>
-          <a class="navbar-brand"><img src="Images/logo-marvel.png" height="20" width="80"> </a>
-        </nav>
-
-      </div>
     </div>
-    <!-- --------------------------------------------------------------------------------------- -->
-    <div class="row">
-      <div class="col-md ">
-        <div class="jumbotron banner">
-          <div class="row">
-            <div class="col-md-8 offset-md-1">
-              <h1 class="primary-jumbo tx-white">Una mirada al universo MARVEL</h1>
-              <p class="tx-white">
-                Bienvenido, aquí encontrarás una compilación de los lugares que han aparecido en las películas
-                de Marvel Studios junto a Disney, entre esas películas están Thor, Avengers, Guardianes
-                de la Galaxia, Pantera Negra, Thor Ragnarok, Capitana Marvel y muchas otras.
-                <br>
-                <br>
-                También encontrarás un catalogo con los principales personajes que viven en el Universo
-                Marvel, asi como una explicación de como estas historias se relacionan entre si y como
-                terminamos en End Game, con tantos personajes cruzándose para vencer al titan Thanos.
-              </p>
-              <button type="button" class="btn btn-primary" onclick="document.location = 'page1.html'">Ver
-                lugares</button>
-            </div>
-          </div>
+  </div>
+  <!-- --------------------------------------------------------------------------------------- -->
+  <!-- Aviso gigante de la pagina de entrada -->
+  <div class="home-row">
+    <div class="home-col">
 
-        </div>
-      </div>
-    </div>
-    
-    <!-- Tarjetas  -->
-    <div class="row">
-      <div class="col-md text-center">
-        <h2>Noticias</h2>
-        <hr>
-      </div>
-    </div>
-
-    <div class="row ">
-      <div class="col-md-3 offset-md-1">
-        <div class="container news-card">
-          <h3>Marvel: hallan referencia a los X-Men en la película “Thor: The Dark World”</h3>
-          <img src="Images/news1.jpg" width="280" height="150">
-
-          <p>Cabe precisar que este detalle de X-Men en Thor no significa necesariamente que veremos algo de Vulcan en
-            las próximas cintas del UCM.</p>
-          <p class="reference">Fuente: depor.com</p>
-          <a href="https://depor.com/depor-play/comics/marvel-hallan-referencia-a-los-x-men-en-la-pelicula-thor-the-dark-world-noticia/"
-            class="btn btn-primary">Ver noticia</a>
-
+      <div class="black-screen">
+        <div class="tx-white">
+          <h1 class="primary-jumbo">Una mirada al universo MARVEL</h1>
+          <p class="">
+            Bienvenido, aquí encontrarás una compilación de los lugares que han aparecido en las películas
+            de Marvel Studios junto a Disney, entre esas películas están Thor, Avengers, Guardianes
+            de la Galaxia, Pantera Negra, Thor Ragnarok, Capitana Marvel y muchas otras.
+            <br>
+            <br>
+            También encontrarás un catalogo con los principales personajes que viven en el Universo
+            Marvel, asi como una explicación de como estas historias se relacionan entre si y como
+            terminamos en End Game, con tantos personajes cruzándose para vencer al titan Thanos.
+          </p>
+          <button type="button" class="btn btn-primary" onclick="document.location = 'page1.html'">Ver
+            lugares</button>
         </div>
 
-      </div>
-      <div class="col-md-3">
-        <div class="container news-card">
-          <h3>Los 5 villanos del Universo Cinematográfico de Marvel más poderosos</h3>
-          <img src="Images/news2.webp" width="280" height="150">
-
-          <p>Hasta la fecha han estrenado 23 películas del Universo Cinematográfico de Marvel donde los héroes hacen
-            frente a diferentes villanos. Pero… ¿Cuáles son los más poderosos?</p>
-          <p class="reference">Fuente: CINEMASCOMICS</p>
-          <a href="https://www.cinemascomics.com/5-villanos-del-universo-cinematografico-de-marvel-mas-poderosos/"
-            class="btn btn-primary">Ver noticia</a>
-        </div>
-
-      </div>
-      <div class="col-md-3 ">
-        <div class="container news-card">
-          <h3>Marvel: ¿cómo está afectando el coronavirus a la Fase 4 del MCU?</h3>
-          <img src="Images/news3.jpg" width="280" height="150">
-
-          <p>El brote masivo de COVID-19 alrededor del mundo ha paralizado la industria del cine y la famosa compañía
-            sería una de las más perjudicadas.</p>
-          <p class="reference">Fuente: La República</p>
-          <a href="https://larepublica.pe/cine-series/2020/04/02/coronavirus-perjudica-a-marvel-alterando-fase-4-del-mcu-black-widow-doctor-strange/"
-            class="btn btn-primary">Ver noticia</a>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md">
       </div>
     </div>
 
 
   </div>
 
+
+
+  <!-- Tarjetas  -->
+  <div class="news-row">
+    <div class="news-title">
+      <h2>Noticias</h2>
+      <hr>
+    </div>
+
+  </div>
+  <!-- Tarjeta con noticia -->
+  <div class="news-row ">
+    <div class="news-card">
+      <h3>Marvel: hallan referencia a los X-Men en la película “Thor: The Dark World”</h3>
+      <img src="Images/news1.jpg">
+
+      <p>Cabe precisar que este detalle de X-Men en Thor no significa necesariamente que veremos algo de Vulcan en
+        las próximas cintas del UCM.</p>
+      <p class="reference">Fuente: depor.com</p>
+      <a href="https://depor.com/depor-play/comics/marvel-hallan-referencia-a-los-x-men-en-la-pelicula-thor-the-dark-world-noticia/"
+        class="btn btn-primary">Ver noticia</a>
+
+    </div>
+
+    <!-- Tarjeta con noticia -->
+    <div class="news-card">
+      <h3>Los 5 villanos del Universo Cinematográfico de Marvel más poderosos</h3>
+      <img src="Images/news2.webp">
+
+      <p>Hasta la fecha han estrenado 23 películas del Universo Cinematográfico de Marvel donde los héroes hacen
+        frente a diferentes villanos. Pero… ¿Cuáles son los más poderosos?</p>
+      <p class="reference">Fuente: CINEMASCOMICS</p>
+      <a href="https://www.cinemascomics.com/5-villanos-del-universo-cinematografico-de-marvel-mas-poderosos/"
+        class="btn btn-primary">Ver noticia</a>
+    </div>
+
+    <!-- Tarjeta con noticia -->
+    <div class="news-card">
+      <h3>Marvel: ¿cómo está afectando el coronavirus a la Fase 4 del MCU?</h3>
+      <img src="Images/news3.jpg">
+
+      <p>El brote masivo de COVID-19 alrededor del mundo ha paralizado la industria del cine y la famosa compañía
+        sería una de las más perjudicadas.</p>
+      <p class="reference">Fuente: La República</p>
+      <a href="https://larepublica.pe/cine-series/2020/04/02/coronavirus-perjudica-a-marvel-alterando-fase-4-del-mcu-black-widow-doctor-strange/"
+        class="btn btn-primary">Ver noticia</a>
+    </div>
+
+  </div>
+
+  <!-- Footer de la pagina -->
   <footer class="page-footer font-small blue">
 
     <!-- Copyright -->
@@ -141,16 +139,6 @@
     <!-- Copyright -->
 
   </footer>
-
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>

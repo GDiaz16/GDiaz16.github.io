@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-    <link href="estilos1.css" rel="stylesheet" type="text/css">
-    <title>Document</title>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <!-- viewport utilizado para permitir el renderizado de la pagina en dispositivos mas pequeños -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Se hace referencia al framework de Bootstrap, sin embargo solo se usa para hacer el navbar
+        Las filas y columnas son hechas con css nativo usando Flex-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+        <!-- Referencia a la hoja de estilos -->
+        <link href="estilos1.css" rel="stylesheet" type="text/css">
+        <!-- Logotipo para la barra de pestañas -->
+        <link rel="shortcut icon" href="Images/icon.jpg" type="image/x-icon">
+        <!-- Titulo de la pagina -->
+        <title>Universo Marvel</title>
+      </head>
 
 <body>
-    <!-- Encabezado en todas las paginas --------------------------------------------------->
-
 
     <div class=" ">
 
@@ -25,6 +30,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
+                        <!-- Solo se mantiene activo el boton de la pagina actual -->
                         <li class="nav-item">
                             <a class="nav-link active" href="page1.html">Universo fisico</a>
                         </li>
@@ -32,7 +38,7 @@
                             <a class="nav-link" href="page2.html">Personajes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="page3.html">Eventos</a>
+                            <a class="nav-link" href="page3.html">Actividades</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="page4.html">Historia</a>
@@ -47,11 +53,14 @@
             </div>
         </div>
 
-        <!-- --------------------------------------------------------------------------------------- -->
+        <!-- Fila con la descripcion de la pagina -->
         <div class="cred-row">
             <h1>El universo al rededor de Marvel</h1>
-            <p>En esta sección encontrarás los lugares que han visitado los personajes de la serie
-                cinematografica de Marvel Studios.
+            <p>El universo cinematográfico de Marvel se ha desarrollado en muchos lugares diferentes y con historias
+                fascinantes. Por supuesto, estos lugares no están solo en la tierra, están distribuidos por todo el
+                universo. En esta pagina veras algunos de estos lugares, la mayoría de ellos planetas, que han sido
+                importantes ya que de allí han salido personajes que han cambiado el rumbo de la historia y han revelado
+                el lugar de aparición de las gemas del infinito.
             </p>
         </div>
 
@@ -60,10 +69,13 @@
             <!-- Columna 1------------------------ -->
             <div class="flex-col-place">
 
-                <!-- Tarjeta -->
+                <!-- Tarjeta: todas las tarjetas inferiores tienen la misma estructura -->
                 <div class="place-card">
+                    <!-- Imagen -->
                     <img src="Images/asgard.jpg" width="300" height="150">
+                    <!-- Titulo -->
                     <h4>Asgard</h4>
+                    <!-- Contenedor con la información de la imagen -->
                     <div class="place-info">
                         <p>Fue uno de los Nueve Mundos, y el hogar de los Asgardianos, una poderosa especie
                             reconocida como una fuerza de paz honorable y valiente que se encargaba de mantener la paz
@@ -72,6 +84,7 @@
                             Pese a que Asgard fue destruido durante el Ragnarök cuando Thor le ordenó a Loki resucitar a
                             Surtur para matar a Hela, Thor aún así pudo trasladar a los Asgardianos sobrevivientes a la
                             Tierra, donde formaron Nuevo Asgard.</p>
+                        <!-- Fuente de la información -->
                         <div class="btn-source"> <a href="https://marvelcinematicuniverse.fandom.com/es/wiki/Asgard">Ver
                                 fuente</a>
                         </div>
@@ -309,7 +322,8 @@
                             en Manhattan. La Mansión fue donada a los Vengadores por el hijo de Howard, Anthony, que la
                             había heredado tras el fallecimiento de su padre, Anthony "Tony" Stark fue uno de los
                             miembros fundadores de los Vengadores bajo la identidad de Iron Man.</p>
-                        <div class="btn-source"> <a href="https://marvel.fandom.com/es/wiki/Mansi%C3%B3n_de_los_Vengadores">Ver
+                        <div class="btn-source"> <a
+                                href="https://marvel.fandom.com/es/wiki/Mansi%C3%B3n_de_los_Vengadores">Ver
                                 fuente</a>
                         </div>
                     </div>
@@ -327,9 +341,8 @@
 
 
     </div>
-
+<!-- Footer de la pagina -->
     <footer class="page-footer font-small blue">
-
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">© 2020 Copyright:
             <a href="https://github.com/GDiaz16">Gonzalo Diaz </a>
@@ -337,16 +350,6 @@
         <!-- Copyright -->
 
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

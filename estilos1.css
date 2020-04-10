@@ -1,33 +1,74 @@
 @charset "UTF-8";
 /* Home ---------------------------------------- */
 
-.banner {
+.home-row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0%;
+}
+
+.home-col {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
     /* https://www.nombresuniverso.com/blog/nebulosa-tulipan-sh2-101-3/ */
     background-image: url(Images/fondo-rojo.jpg);
 }
 
-.banner-title {
+.black-screen {
+    opacity: 1;
+    transition: opacity 1s;
+    background-color: rgba(0, 0, 0, 0.336);
     color: white;
-}
-
-.vertical-nav {
-    display: block;
 }
 
 .primary-jumbo {
     font-size: 60px;
-    font-family: 'Segoe UI';
 }
 
 .tx-white {
     color: white;
+    z-index: 1;
+    padding-left: 10%;
+    padding-right: 15%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+.news-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .news-card {
+    display: flex;
+    flex-direction: column;
+    width: 31%;
     transition: transform 1s;
     padding-bottom: 5%;
-    padding-top: 3%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 1%;
     background-color: rgb(221, 218, 213);
+}
+
+.news-card h3 {
+    text-align: center;
+}
+
+.news-title {
+    width: 100%;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.news-card img {
+    width: 100%;
 }
 
 .reference {
@@ -36,6 +77,7 @@
 
 .news-card h1 {
     text-align: center;
+    width: 100%;
 }
 
 .news-card:hover {
@@ -45,9 +87,10 @@
     z-index: 1;
 }
 
-.news-card:hover .reference{
+.news-card:hover .reference {
     color: rgb(224, 190, 190);
 }
+
 /* Lugares------------------------------------------ */
 
 .flex-row-place {
@@ -408,6 +451,9 @@
         margin-top: 2%;
         margin-bottom: 30%;
     }
+    .news-card {
+        width: 45%;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -427,5 +473,9 @@
         width: 100%;
         height: 40%;
         margin-left: 0%;
+    }
+    .news-card {
+        width: 90%;
+        margin-bottom: 3%;
     }
 }

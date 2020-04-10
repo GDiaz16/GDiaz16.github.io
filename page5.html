@@ -3,207 +3,224 @@
 
 <head>
     <meta charset="UTF-8" />
+    <!-- viewport utilizado para permitir el renderizado de la pagina en dispositivos mas pequeños -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Se hace referencia al framework de Bootstrap, sin embargo solo se usa para hacer el navbar
+        Las filas y columnas son hechas con css nativo usando Flex-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <!-- Referencia a la hoja de estilos -->
     <link href="estilos1.css" rel="stylesheet" type="text/css">
-    <title>Document</title>
+    <!-- Logotipo para la barra de pestañas -->
+    <link rel="shortcut icon" href="Images/icon.jpg" type="image/x-icon">
+    <!-- Titulo de la pagina -->
+    <title>Universo Marvel</title>
 </head>
 
 <body>
     <!-- Encabezado en todas las paginas --------------------------------------------------->
 
 
-    <div class=" ">
 
-        <!-- Menu de botones -->
-        <div class="row no-gutters">
-            <div class="col-md-12">
-                <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <!-- Menu de botones -->
+    <div class="row no-gutters">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
 
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="page1.html">Universo fisico</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="page2.html">Personajes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="page3.html">Eventos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="page4.html">Historia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="page5.html">Créditos</a>
-                        </li>
-                    </ul>
-                    <a class="navbar-brand"><img src="Images/logo-marvel.png" height="20" width="80"> </a>
-                </nav>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page1.html">Universo fisico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page2.html">Personajes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page3.html">Actividades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page4.html">Historia</a>
+                    </li>
+                    <!-- Solo se mantiene activo el botón de la pagina actual -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="page5.html">Créditos</a>
+                    </li>
+                </ul>
+                <a class="navbar-brand"><img src="Images/logo-marvel.png" height="20" width="80"> </a>
+            </nav>
 
-            </div>
         </div>
-        <!-- --------------------------------------------------------------------------------------- -->
-        <div class="cred-row">
-            <h1>Créditos</h1>
-            <p>Los datos y la informacion vienen en su mayoria referenciados en cada lugar en el que aparecen, para
-                las imagenes y otras referencias, consulte la informacion a continuacion
+    </div>
+    <!-- Fila con la descripción de la pagina -->
+    <div class="cred-row">
+        <h1>Créditos</h1>
+        <p>Los datos y la informacion vienen en su mayoria referenciados en cada lugar en el que aparecen, para
+            las imagenes y otras referencias, consulte la informacion a continuacion
+        </p>
+    </div>
+    <!-- Tarjetas  -->
+    <div class="cred-row1">
+        <!-- Columna de referencias -->
+        <div class="cred-col">
+            <!-- Lista de referencias -->
+            <ul>
+                <li>Linea temporal de las peliculas: <a
+                        href="https://www.ecartelera.com/noticias/marvel-publica-linea-temporal-todas-sus-peliculas-50553/">Link</a>
+                </li>
+                <li>Historia: Capitán America el primer vengador <a
+                        href="https://marvelcinematicuniverse.fandom.com/es/wiki/Captain_America:_The_First_Avenger">Link</a>
+                </li>
+                <li>Historia: Capitana Marvel <a
+                        href="https://marvelcinematicuniverse.fandom.com/es/wiki/Captain_Marvel_(pel%C3%ADcula)">Link</a>
+                </li>
+                <li>Historia: Iron Man 1 <a
+                        href="https://marvelcinematicuniverse.fandom.com/es/wiki/Iron_Man_(pel%C3%ADcula)">Link</a>
+                </li>
+                <li>Historia: Iron Man 2 <a
+                        href="https://marvelcinematicuniverse.fandom.com/es/wiki/Iron_Man_2">Link</a></li>
+                <li>Historia: El increible Hulk <a
+                        href="https://marvelcinematicuniverse.fandom.com/es/wiki/The_Incredible_Hulk">Link</a></li>
+                <li>Historia: Thor <a
+                        href="https://marvelcinematicuniverse.fandom.com/es/wiki/Thor_(pel%C3%ADcula)">Link</a></li>
+                <li>Historia: Avengers <a
+                        href="https://marvelcinematicuniverse.fandom.com/es/wiki/The_Avengers">Link</a></li>
+                <li>Historia: Iron Man 3 <a href="https://marvel.fandom.com/es/wiki/Iron_Man_3_(pel%C3%ADcula)">Link</a>
+                </li>
+                <li>Historia: Thor: un mundo oscuro <a
+                        href="https://marvelcinematicuniverse.fandom.com/es/wiki/Thor:_The_Dark_World">Link</a></li>
+                <li>Historia: Capitán America, el soldado del invierno <a
+                        href="https://marvelcinematicuniverse.fandom.com/es/wiki/Captain_America:_The_Winter_Soldier">Link</a>
+                </li>
+                <li>Historia: Guardianes de la galaxia vol 1 <a
+                        href="https://marvelcinematicuniverse.fandom.com/es/wiki/Guardians_of_the_Galaxy">Link</a>
+                </li>
+                <li>Historia: Guardianes de la galaxia vol 2 <a
+                        href="https://marvelcinematicuniverse.fandom.com/es/wiki/Guardians_of_the_Galaxy_Vol._2">Link</a>
+                </li>
+                <li>Historia: Avengers: Era de Ultron <a
+                        href="https://marvelcinematicuniverse.fandom.com/es/wiki/Avengers:_Age_of_Ultron">Link</a>
+                </li>
+                <li>Historia: Ant Man <a
+                        href="https://marvelcinematicuniverse.fandom.com/es/wiki/Ant-Man_(pel%C3%ADcula)">Link</a>
+                </li>
+                <li>Historia: Capitán America: Guerra Civil <a
+                        href="https://marvelcinematicuniverse.fandom.com/es/wiki/Captain_America:_Civil_War">Link</a>
+                </li>
+                <li>Historia: Doctor Strange <a
+                        href="https://marvelcinematicuniverse.fandom.com/es/wiki/Doctor_Strange_(pel%C3%ADcula)">Link</a>
+                </li>
+                <li>Historia: Spider Man Homecoming <a
+                        href="https://marvelcinematicuniverse.fandom.com/es/wiki/Spider-Man:_Homecoming">Link</a>
+                </li>
+                <li>Historia: Pantera Negra <a
+                        href="https://marvelcinematicuniverse.fandom.com/es/wiki/Black_Panther_(pel%C3%ADcula)">Link</a>
+                </li>
+                <li>Historia: Thor Ragnarok <a
+                        href="https://marvelcinematicuniverse.fandom.com/es/wiki/Thor:_Ragnarok">Link</a></li>
+                <li>Historia: Avengers Infinity War <a
+                        href="https://marvelcinematicuniverse.fandom.com/es/wiki/Avengers:_Infinity_War">Link</a>
+                </li>
+                <li>Historia: Avengers Endgame <a
+                        href="https://marvelcinematicuniverse.fandom.com/es/wiki/Avengers:_Endgame">Link</a></li>
+
+                <li>Logo Avengers <a href="https://music.amazon.in/albums/B07X5CVFKX">Link</a></li>
+                <li>Imagen Ciudad de Asgard: <a href="https://www.artstation.com/artwork/ybkPvx">Link</a></li>
+                <li>Imagen Wakanda: <a
+                        href="https://lafuncion.mx/estados-unidos-pone-fin-a-alianza-comercial-con-wakanda-si-el-pais-de-black-panther/">Link</a>
+                </li>
+                <li>Imagen Sanctum Snctorum: <a href="https://muhrpg.forumcommunity.net/?t=61497366">Link</a></li>
+                <li>Imagen Planeta Titan: <a href="https://marvelcinematicuniverse.fandom.com/wiki/Titans">Link</a>
+                </li>
+                <li>Imagen Planeta Morag: <a href="https://alfvenato.artstation.com/projects/Pm031">Link</a></li>
+                <li>Imagen Planeta Sakaar: <a href="https://www.artstation.com/artwork/dOgz3K">Link</a></li>
+                <li>Imagen Planeta Xandar<a href="https://www.pinterest.nz/pin/438889926178491531/">Link</a></li>
+                <li>Imagen Planeta Vormir: <a href="https://marvelcinematicuniverse.fandom.com/es/wiki/Vormir">Link</a>
+                </li>
+                <li>Imagen Knowhere: <a
+                        href="https://conpochoclos.com/the-eternals-podria-establecer-el-origen-de-knowhere-de-guardianes-de-la-galaxia/">Link</a>
+                </li>
+                <li>Imagen Planeta Hala: <a
+                        href="https://www.reddit.com/r/Captain_Marvel/comments/a3dqsh/hala_is_such_a_beautiful_planet/">Link</a>
+                </li>
+                <li>Imagen Ego el planeta viviente: <a
+                        href="https://www.cbr.com/ego-the-living-planet-mcu-comics-differences/">Link</a></li>
+                <li>Imagen Nidavellir: <a href="https://marvelcinematicuniverse.fandom.com/es/wiki/Nidavellir">Link</a>
+                </li>
+                <li>Imagen Planeta Tierra: <a
+                        href="https://www.ngenespanol.com/el-mundo/unete-hora-del-planeta-naturaleza/">Link</a></li>
+                <li>Imagne Mansión de los Vengadores<a
+                        href="https://m.culturaocio.com/cine/noticia-spiderman-visita-base-vengadores-homecoming-20160916141407.html">Link</a>
+                </li>
+                <li>Imagen Spiderman: <a
+                        href="https://cronicaglobal.elespanol.com/cronica-directo/curiosidades/peliculas-spider-man-orden_259341_102.html">Link</a>
+                </li>
+                <li>Imagen Ironman: <a
+                        href="https://www.antena3.com/se-estrena/noticias/marvel-confiesa-fin-quien-verdadero-padre-iron-man_201805285b0bba450cf27c00cd6e3c80.html">Link</a>
+                </li>
+                <li>Imagen Hulk: <a href="https://wipy.tv/pelea-de-hulk-contra-juggernaut/">Link</a></li>
+                <li>Imagen Capitan America: <a
+                        href="https://xoandelugo.org/capitan-america-superheroe-libertario-ignacio-almara/">Link</a>
+                </li>
+                <li>Imagen Loki: <a
+                        href="http://www.empireonline.com.mx/noticias/dice-marvel-que-loki-no-era-malo-en-los-vengadores/">Link</a>
+                </li>
+                <li>Imagen Thanos: <a href="https://wipy.tv/thanos-destruyo-mexico/">Link</a></li>
+                <li>Imagen Gamora: <a
+                        href="https://www.cinemascomics.com/vengadores-4-brutal-spoiler-con-gamora/">Link</a></li>
+                <li>Imagen Vision: <a href="https://marvel.fandom.com/es/wiki/Vision_(Tierra-199999)">Link</a></li>
+                <li>Imagen Nic Fury: <a href="https://www.sensacine.com.mx/noticias/noticia-18564290/">Link</a></li>
+                <li>Imagen Dr Strange: <a
+                        href="https://depor.com/depor-play/comics/marvel-director-de-dr-strange-in-the-multiverse-of-madness-preocupa-a-los-fans-con-este-tuit-noticia/">Link</a>
+                </li>
+                <li>Imagen Thor: <a
+                        href="https://frikidisfraz.com/thor-el-dios-mas-fuerte-de-la-mitologia-nordica-el-dios-trueno/">Link</a>
+                </li>
+                <li>Imagen Capitana Marvel: <a
+                        href="https://www.espinof.com/criticas/capitana-marvel-llega-diez-anos-tarde-historia-origenes-perezosa-e-insipida">Link</a>
+                </li>
+                <li>Imagen Ultron: <a
+                        href="https://www.sopitas.com/noticias/un-repaso-por-la-historia-de-ultron-en-los-comics-de-marvel/">Link</a>
+                </li>
+                <li>Imagen Hela: <a
+                        href="https://www.alfabetajuega.com/cine/thor-ragnarok-asi-es-la-increible-figura-hot-toys-de-hela-d-115260">Link</a>
+                </li>
+                <li>Imagen Star Lord: <a
+                        href="https://www.infobae.com/2015/12/02/1773757-la-mascara-star-lord-iba-ser-muy-diferente/">Link</a>
+                </li>
+                <li>Posters peliculas : <a
+                        href="https://www.tomatazos.com/articulos/297589/Todos-los-posters-del-Universo-Cinematografico-de-Marvel">Link</a>
+                </li>
+                <li>Imagen Peter Parker: <a
+                        href="https://geektyrant.com/news/spider-man-homecoming-behind-the-scenes-special-features-lots-of-new-footage">Link</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Columna de mapa de sitio y autoria -->
+        <div class="cred-col site-map">
+            <h4>Mapa del sitio</h4>
+            <ul>
+                <li><a href="">Home</a></li>
+                <ul>
+                    <li><a href="page1.html">Universo Físico</a></li>
+                    <li><a href="page2.html">Personajes</a></li>
+                    <li><a href="page3.html">Eventos</a></li>
+                    <li><a href="page4.html">Historia</a></li>
+                </ul>
+                <li><a href="page5.html">Créditos</a></li>
+            </ul>
+            <!-- Autoría del trabajo -->
+            <h4>Autoría</h4>
+            <p>
+                <h5>Enderson Gonzalo Diaz Muñoz</h5>
+                Ingenieria de Sistemas y Computacion <br>
+                Universidad Nacional de Colombia
             </p>
         </div>
-        <!-- Tarjetas  -->
-        <div class="cred-row1">
-            <div class="cred-col">
-                <ul>
-                    <li>Linea temporal de las peliculas: <a
-                            href="https://www.ecartelera.com/noticias/marvel-publica-linea-temporal-todas-sus-peliculas-50553/">Link</a>
-                    </li>
-                    <li>Historia: Capitán America el primer vengador <a
-                            href="https://marvelcinematicuniverse.fandom.com/es/wiki/Captain_America:_The_First_Avenger">Link</a>
-                    </li>
-                    <li>Historia: Capitana Marvel <a
-                            href="https://marvelcinematicuniverse.fandom.com/es/wiki/Captain_Marvel_(pel%C3%ADcula)">Link</a>
-                    </li>
-                    <li>Historia: Iron Man 1 <a
-                            href="https://marvelcinematicuniverse.fandom.com/es/wiki/Iron_Man_(pel%C3%ADcula)">Link</a>
-                    </li>
-                    <li>Historia: Iron Man 2 <a
-                            href="https://marvelcinematicuniverse.fandom.com/es/wiki/Iron_Man_2">Link</a></li>
-                    <li>Historia: El increible Hulk <a
-                            href="https://marvelcinematicuniverse.fandom.com/es/wiki/The_Incredible_Hulk">Link</a></li>
-                    <li>Historia: Thor <a
-                            href="https://marvelcinematicuniverse.fandom.com/es/wiki/Thor_(pel%C3%ADcula)">Link</a></li>
-                    <li>Historia: Avengers <a
-                            href="https://marvelcinematicuniverse.fandom.com/es/wiki/The_Avengers">Link</a></li>
-                    <li>Historia: Iron Man 3 <a
-                            href="https://marvel.fandom.com/es/wiki/Iron_Man_3_(pel%C3%ADcula)">Link</a></li>
-                    <li>Historia: Thor: un mundo oscuro <a
-                            href="https://marvelcinematicuniverse.fandom.com/es/wiki/Thor:_The_Dark_World">Link</a></li>
-                    <li>Historia: Capitán America, el soldado del invierno <a
-                            href="https://marvelcinematicuniverse.fandom.com/es/wiki/Captain_America:_The_Winter_Soldier">Link</a>
-                    </li>
-                    <li>Historia: Guardianes de la galaxia vol 1 <a
-                            href="https://marvelcinematicuniverse.fandom.com/es/wiki/Guardians_of_the_Galaxy">Link</a>
-                    </li>
-                    <li>Historia: Guardianes de la galaxia vol 2 <a
-                            href="https://marvelcinematicuniverse.fandom.com/es/wiki/Guardians_of_the_Galaxy_Vol._2">Link</a>
-                    </li>
-                    <li>Historia: Avengers: Era de Ultron <a
-                            href="https://marvelcinematicuniverse.fandom.com/es/wiki/Avengers:_Age_of_Ultron">Link</a>
-                    </li>
-                    <li>Historia: Ant Man <a
-                            href="https://marvelcinematicuniverse.fandom.com/es/wiki/Ant-Man_(pel%C3%ADcula)">Link</a>
-                    </li>
-                    <li>Historia: Capitán America: Guerra Civil <a
-                            href="https://marvelcinematicuniverse.fandom.com/es/wiki/Captain_America:_Civil_War">Link</a>
-                    </li>
-                    <li>Historia: Doctor Strange <a
-                            href="https://marvelcinematicuniverse.fandom.com/es/wiki/Doctor_Strange_(pel%C3%ADcula)">Link</a>
-                    </li>
-                    <li>Historia: Spider Man Homecoming <a
-                            href="https://marvelcinematicuniverse.fandom.com/es/wiki/Spider-Man:_Homecoming">Link</a>
-                    </li>
-                    <li>Historia: Pantera Negra <a
-                            href="https://marvelcinematicuniverse.fandom.com/es/wiki/Black_Panther_(pel%C3%ADcula)">Link</a>
-                    </li>
-                    <li>Historia: Thor Ragnarok <a
-                            href="https://marvelcinematicuniverse.fandom.com/es/wiki/Thor:_Ragnarok">Link</a></li>
-                    <li>Historia: Avengers Infinity War <a
-                            href="https://marvelcinematicuniverse.fandom.com/es/wiki/Avengers:_Infinity_War">Link</a>
-                    </li>
-                    <li>Historia: Avengers Endgame <a
-                            href="https://marvelcinematicuniverse.fandom.com/es/wiki/Avengers:_Endgame">Link</a></li>
-
-                    <li>Imagen Ciudad de Asgard: <a href="https://www.artstation.com/artwork/ybkPvx">Link</a></li>
-                    <li>Imagen Wakanda: <a
-                            href="https://lafuncion.mx/estados-unidos-pone-fin-a-alianza-comercial-con-wakanda-si-el-pais-de-black-panther/">Link</a>
-                    </li>
-                    <li>Imagen Sanctum Snctorum: <a href="https://muhrpg.forumcommunity.net/?t=61497366">Link</a></li>
-                    <li>Imagen Planeta Titan: <a href="https://marvelcinematicuniverse.fandom.com/wiki/Titans">Link</a>
-                    </li>
-                    <li>Imagen Planeta Morag: <a href="https://alfvenato.artstation.com/projects/Pm031">Link</a></li>
-                    <li>Imagen Planeta Sakaar: <a href="https://www.artstation.com/artwork/dOgz3K">Link</a></li>
-                    <li>Imagen Planeta Xandar<a href="https://www.pinterest.nz/pin/438889926178491531/">Link</a></li>
-                    <li>Imagen Planeta Vormir: <a
-                            href="https://marvelcinematicuniverse.fandom.com/es/wiki/Vormir">Link</a></li>
-                    <li>Imagen Knowhere: <a
-                            href="https://conpochoclos.com/the-eternals-podria-establecer-el-origen-de-knowhere-de-guardianes-de-la-galaxia/">Link</a>
-                    </li>
-                    <li>Imagen Planeta Hala: <a
-                            href="https://www.reddit.com/r/Captain_Marvel/comments/a3dqsh/hala_is_such_a_beautiful_planet/">Link</a>
-                    </li>
-                    <li>Imagen Ego el planeta viviente: <a
-                            href="https://www.cbr.com/ego-the-living-planet-mcu-comics-differences/">Link</a></li>
-                    <li>Imagen Nidavellir: <a
-                            href="https://marvelcinematicuniverse.fandom.com/es/wiki/Nidavellir">Link</a></li>
-                    <li>Imagen Planeta Tierra: <a
-                            href="https://www.ngenespanol.com/el-mundo/unete-hora-del-planeta-naturaleza/">Link</a></li>
-                    <li>Imagne Mansión de los Vengadores<a
-                            href="https://m.culturaocio.com/cine/noticia-spiderman-visita-base-vengadores-homecoming-20160916141407.html">Link</a>
-                    </li>
-                    <li>Imagen Spiderman: <a
-                            href="https://cronicaglobal.elespanol.com/cronica-directo/curiosidades/peliculas-spider-man-orden_259341_102.html">Link</a>
-                    </li>
-                    <li>Imagen Ironman: <a
-                            href="https://www.antena3.com/se-estrena/noticias/marvel-confiesa-fin-quien-verdadero-padre-iron-man_201805285b0bba450cf27c00cd6e3c80.html">Link</a>
-                    </li>
-                    <li>Imagen Hulk: <a href="https://wipy.tv/pelea-de-hulk-contra-juggernaut/">Link</a></li>
-                    <li>Imagen Capitan America: <a
-                            href="https://xoandelugo.org/capitan-america-superheroe-libertario-ignacio-almara/">Link</a>
-                    </li>
-                    <li>Imagen Loki: <a
-                            href="http://www.empireonline.com.mx/noticias/dice-marvel-que-loki-no-era-malo-en-los-vengadores/">Link</a>
-                    </li>
-                    <li>Imagen Thanos: <a href="https://wipy.tv/thanos-destruyo-mexico/">Link</a></li>
-                    <li>Imagen Gamora: <a
-                            href="https://www.cinemascomics.com/vengadores-4-brutal-spoiler-con-gamora/">Link</a></li>
-                    <li>Imagen Vision: <a href="https://marvel.fandom.com/es/wiki/Vision_(Tierra-199999)">Link</a></li>
-                    <li>Imagen Nic Fury: <a href="https://www.sensacine.com.mx/noticias/noticia-18564290/">Link</a></li>
-                    <li>Imagen Dr Strange: <a
-                            href="https://depor.com/depor-play/comics/marvel-director-de-dr-strange-in-the-multiverse-of-madness-preocupa-a-los-fans-con-este-tuit-noticia/">Link</a>
-                    </li>
-                    <li>Imagen Thor: <a
-                            href="https://frikidisfraz.com/thor-el-dios-mas-fuerte-de-la-mitologia-nordica-el-dios-trueno/">Link</a>
-                    </li>
-                    <li>Imagen Capitana Marvel: <a
-                            href="https://www.espinof.com/criticas/capitana-marvel-llega-diez-anos-tarde-historia-origenes-perezosa-e-insipida">Link</a>
-                    </li>
-                    <li>Imagen Ultron: <a
-                            href="https://www.sopitas.com/noticias/un-repaso-por-la-historia-de-ultron-en-los-comics-de-marvel/">Link</a>
-                    </li>
-                    <li>Imagen Hela: <a
-                            href="https://www.alfabetajuega.com/cine/thor-ragnarok-asi-es-la-increible-figura-hot-toys-de-hela-d-115260">Link</a>
-                    </li>
-                    <li>Imagen Star Lord: <a
-                            href="https://www.infobae.com/2015/12/02/1773757-la-mascara-star-lord-iba-ser-muy-diferente/">Link</a>
-                    </li>
-                    <li>Posters peliculas : <a
-                            href="https://www.tomatazos.com/articulos/297589/Todos-los-posters-del-Universo-Cinematografico-de-Marvel">Link</a>
-                    </li>
-                    <li>Imagen Peter Parker: <a
-                            href="https://geektyrant.com/news/spider-man-homecoming-behind-the-scenes-special-features-lots-of-new-footage">Link</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="cred-col site-map">
-                <h4>Mapa del sitio</h4>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <ul>
-                        <li><a href="page1.html">Universo Físico</a></li>
-                        <li><a href="page2.html">Personajes</a></li>
-                        <li><a href="page3.html">Eventos</a></li>
-                        <li><a href="page4.html">Historia</a></li>
-                    </ul>
-                    <li><a href="page5.html">Créditos</a></li>
-                </ul>
-            </div>
-        </div>
-
     </div>
 
+    <!-- Footer de la pagina -->
     <footer class="page-footer font-small blue">
 
         <!-- Copyright -->
@@ -214,15 +231,6 @@
 
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

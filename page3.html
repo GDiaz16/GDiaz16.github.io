@@ -3,11 +3,18 @@
 
 <head>
     <meta charset="UTF-8" />
+    <!-- viewport utilizado para permitir el renderizado de la pagina en dispositivos mas pequeños -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Se hace referencia al framework de Bootstrap, sin embargo solo se usa para hacer el navbar
+        Las filas y columnas son hechas con css nativo usando Flex-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <!-- Referencia a la hoja de estilos -->
     <link href="estilos1.css" rel="stylesheet" type="text/css">
-    <title>Document</title>
+    <!-- Logotipo para la barra de pestañas -->
+    <link rel="shortcut icon" href="Images/icon.jpg" type="image/x-icon">
+    <!-- Titulo de la pagina -->
+    <title>Universo Marvel</title>
 </head>
 
 <body>
@@ -30,8 +37,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="page2.html">Personajes</a>
                     </li>
+                    <!-- Solo se mantiene activo el botón de la pagina actual -->
                     <li class="nav-item">
-                        <a class="nav-link active" href="page3.html">Eventos</a>
+                        <a class="nav-link active" href="page3.html">Actividades</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="page4.html">Historia</a>
@@ -45,34 +53,39 @@
 
         </div>
     </div>
-    <!-- --------------------------------------------------------------------------------------- -->
+    <!-- Fila con la descripción de la pagina -->
     <div class="cred-row">
-        <h1>Eventos</h1>
+        <h1>Actividades</h1>
         <p>En esta sección encontrarás las actividades que se llevan a cabo en varios lugares del universo por los
             héroes y villanos de Marvel. <br>
             Para ver la fuente de la imagen, con más información presione el boton "Ver" en cada tarjeta <br>
+            <!-- Ancla a otra parte de la pagina -->
             <a href="#ancla1">Mira aquí los eventos que ocurrieron en el espacio</a>
         </p>
     </div>
-
+    <!-- Subtitulo -->
     <div class="cred-row">
         <span>
             <h3>Eventos que ocurrieron en La Tierra</h3>
             <hr>
-
         </span>
 
     </div>
     <div class="flex-row-evt">
         <div class="flex-col-evt">
-
+            <!-- Tarjeta: todas las tarjetas inferiores tienen la misma estructura -->
             <div class="evt-card">
+                <!-- Imagen -->
                 <img src="Images/black-panther-event.gif" width="300" height="150">
+                <!-- Panel de información  -->
                 <div class="evt-info">
+                    <!-- Titulo de la tarjeta -->
                     <h4>Black Panther</h4>
+                    <!-- Contenido de la tarjeta -->
                     <p>El heredero del trono Wakandiano debe luchar contra otro aspirante al trono que pretende llevar
                         la tecnologia de Wakanda a todas las comunidades negras del mundo para que estas inicien una
                         guerra contra quienes siempre los han oprimido. </p>
+                    <!-- Fuente de la información -->
                     <div class="btn-source"> <a
                             href="https://gfycat.com/fr/jollybesthammerheadshark-black-panther-vs-killmonger-final-fight-scene">Ver
                         </a>
@@ -285,15 +298,6 @@
 
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
