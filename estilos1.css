@@ -1,20 +1,25 @@
 @charset "UTF-8";
 /* Home ---------------------------------------- */
 
+/* Fila del panel de bienvenida */
+
 .home-row {
     display: flex;
     flex-direction: row;
     margin-bottom: 0%;
 }
 
+/* Columna del panel de bienvenida */
+
 .home-col {
     display: flex;
     position: relative;
     flex-direction: column;
     width: 100%;
-    /* https://www.nombresuniverso.com/blog/nebulosa-tulipan-sh2-101-3/ */
     background-image: url(Images/fondo-rojo.jpg);
 }
+
+/* Pantalla negra que permite que el texto blanco se vea */
 
 .black-screen {
     opacity: 1;
@@ -23,9 +28,13 @@
     color: white;
 }
 
+/* Tamaño del titulo de la fuente */
+
 .primary-jumbo {
     font-size: 60px;
 }
+
+/* Alineacion del texto del panel de bienvenida */
 
 .tx-white {
     color: white;
@@ -36,6 +45,8 @@
     padding-bottom: 10%;
 }
 
+/* Fila de noticias */
+
 .news-row {
     display: flex;
     flex-direction: row;
@@ -43,6 +54,8 @@
     margin-left: 10%;
     margin-right: 10%;
 }
+
+/* Columna o tarjetas de noticias */
 
 .news-card {
     display: flex;
@@ -57,9 +70,13 @@
     background-color: rgb(221, 218, 213);
 }
 
+/* Titulo de cada tarjeta */
+
 .news-card h3 {
     text-align: center;
 }
+
+/* Titulo de la sección de noticias */
 
 .news-title {
     width: 100%;
@@ -67,18 +84,19 @@
     padding-top: 2%;
 }
 
+/* Tamaño de la imagen de cada tarjeta */
+
 .news-card img {
     width: 100%;
 }
+
+/* Color de la referencia */
 
 .reference {
     color: rgb(111, 101, 119);
 }
 
-.news-card h1 {
-    text-align: center;
-    width: 100%;
-}
+/* Animación de la tarjeta al pasar el mouse sobre la tarjeta */
 
 .news-card:hover {
     transform: scale(1.1);
@@ -87,11 +105,15 @@
     z-index: 1;
 }
 
+/* El color del texto de la referencia cambia con el hover */
+
 .news-card:hover .reference {
     color: rgb(224, 190, 190);
 }
 
 /* Lugares------------------------------------------ */
+
+/* Fila de lugar */
 
 .flex-row-place {
     display: flex;
@@ -102,6 +124,8 @@
     margin: auto;
 }
 
+/* Columnas de lugar */
+
 .flex-col-place {
     display: flex;
     flex-direction: column;
@@ -109,16 +133,22 @@
     height: 100%;
 }
 
+/* Tarjeta de lugar */
+
 .place-card {
     text-align: left;
     background-color: rgb(221, 218, 213);
     margin: 2%;
 }
 
+/* Titulo de la tarjeta */
+
 .place-card h4 {
     padding-left: 20px;
     padding-bottom: 2%;
 }
+
+/* Texto de la tarjeta */
 
 .place-card p {
     text-align: left;
@@ -126,11 +156,15 @@
     padding-right: 20px;
 }
 
+/* Información oculta de la tarjeta */
+
 .place-info {
     max-height: 0px;
     overflow: hidden;
     transition: max-height 1s;
 }
+
+/* Botón de fuente de la información */
 
 .btn-source {
     background-color: rgb(241, 241, 245);
@@ -141,19 +175,27 @@
     width: 20%;
 }
 
+/* Color y decoración del botón de fuente de información */
+
 .btn-source a {
     text-decoration: none !important;
     color: black;
 }
+
+/* Cambio de color del botón de fuente al pasar el mouse sobre él */
 
 .btn-source:hover {
     background-color: rgb(13, 135, 184);
     color: white;
 }
 
+/* Color de la letra del botón al cambiar de color debido al hover */
+
 .btn-source:hover a {
     color: white;
 }
+
+/* Tamaño y posición de la imagen */
 
 .place-card img {
     width: 100%;
@@ -161,18 +203,24 @@
     margin-bottom: 5%;
 }
 
+/* Color de la tarjeta al pasar el mouse sobre ella */
+
 .place-card:hover {
     background-image: linear-gradient(red, rgb(185, 98, 98));
     color: white;
 }
 
-/* Animacion lugares */
+/* Animación lugares */
+
+/* La tarjeta crece y permite que la información se muestre */
 
 .place-card:hover .place-info {
     max-height: 700px;
 }
 
 /* Personajes---------------------------------------- */
+
+/* Fila de personajes */
 
 .flex-row-ch {
     display: flex;
@@ -183,6 +231,8 @@
     margin: auto;
 }
 
+/* Columna de personajes */
+
 .flex-col-ch {
     display: flex;
     flex-direction: column;
@@ -191,22 +241,30 @@
     height: 0%;
 }
 
+/* Tarjeta de un personaje */
+
 .ch-card {
     text-align: left;
     background-color: rgb(221, 218, 213);
     margin-bottom: 20px;
 }
 
+/* Titulo de la tarjeta */
+
 .ch-card h4 {
     padding-left: 20px;
     padding-bottom: 2%;
 }
+
+/* Contenido de la tarjeta */
 
 .ch-card p {
     text-align: left;
     padding-left: 20px;
     padding-right: 20px;
 }
+
+/* Footer de la tarjeta con la referencia de la información */
 
 .ch-source {
     background-color: rgb(207, 204, 204);
@@ -216,11 +274,15 @@
     vertical-align: middle;
 }
 
+/* Tamaño y posición de la imagen */
+
 .ch-card img {
     width: 100%;
     height: 100%;
     margin-bottom: 5%;
 }
+
+/* Cambio de color de la tarjeta cuando se le pasa el mouse por encima */
 
 .ch-card:hover {
     background-image: linear-gradient(red, rgb(185, 98, 98));
@@ -229,6 +291,8 @@
 }
 
 /* Eventos------------------------------------- */
+
+/* Fila de tarjetas de actividades */
 
 .flex-row-evt {
     display: flex;
@@ -239,11 +303,15 @@
     margin: auto;
 }
 
+/* Columnas de  actividades*/
+
 .flex-col-evt {
     display: flex;
     flex-direction: column;
     width: 50%;
 }
+
+/* Tarjeta de actividades */
 
 .evt-card {
     text-align: center;
@@ -253,17 +321,23 @@
     height: 100%;
 }
 
+/* Imagen de la tarjeta */
+
 .evt-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+/* Distancia del ancla del titulo respecto a la fila superior */
+
 #ancla1 {
     padding-top: 50px;
 }
 
 /* Selectores */
+
+/* Informacion de la tarjeta que tiene opacidad cero y por lo tanto aparece oculta */
 
 .evt-info {
     opacity: 0;
@@ -277,17 +351,25 @@
     bottom: 0%;
 }
 
+/* Posición del texto en la tarjeta */
+
 .evt-info p {
     margin: 3%;
 }
+
+/* Posición del titulo */
 
 .evt-info h4 {
     margin: 3%;
 }
 
+/* Al pasar el mouse sobre la tarjeta la opacidad pasa a 1 y se ve el texto encima de la imagen */
+
 .evt-card:hover .evt-info {
     opacity: 1;
 }
+
+/* Posición y tamaño del botón de la fuente de información */
 
 .evt-info .btn-source {
     margin-left: 46%;
@@ -297,9 +379,13 @@
 
 /* Historia del universo marvel---------------- */
 
+/* Contenedor del elemento flotante */
+
 .hi-container {
     position: relative;
 }
+
+/* Fila de historias */
 
 .hi-row {
     display: flex;
@@ -310,10 +396,14 @@
     margin-bottom: 30%;
 }
 
+/* Tamaño de las celdas de la linea de tiempo */
+
 .hi {
     margin-bottom: 10px;
     width: 10%;
 }
+
+/* Posición de la fecha */
 
 .date {
     padding: 6px;
@@ -323,9 +413,13 @@
     border-width: 1px;
 }
 
+/* La celda cambia de color cuando se le pasa el mouse por encima */
+
 .date:hover {
     background-color: rgb(207, 118, 118);
 }
+
+/* Tamaño de la imagen */
 
 .hi-info img {
     width: 50%;
@@ -334,13 +428,17 @@
 
 /* Selectores */
 
+/* La informacion aparece oculta */
+
 .hi-info {
     display: none;
 }
 
+/* Al pasar el mouse sobre la celda de la fecha aparece la información en una caja 
+flotante */
+
 .hi:hover .hi-info {
     display: block;
-    /*position: absolute; */
     position: fixed;
     padding-top: 1%;
     padding-left: 2%;
@@ -355,6 +453,8 @@
 
 /* Creditos-------------------------- */
 
+/* Fila de que se usa como introducción en cada pagina */
+
 .cred-row {
     display: flex;
     flex-wrap: wrap;
@@ -363,6 +463,8 @@
     padding-right: 10%;
     margin: auto;
 }
+
+/* Fila de referencias */
 
 .cred-row1 {
     display: flex;
@@ -373,6 +475,8 @@
     margin: auto;
 }
 
+/* Columna de referencias  */
+
 .cred-col {
     display: flex;
     flex-direction: column;
@@ -380,28 +484,40 @@
     height: 100%;
 }
 
+/* Estilo de la lista de referencias */
+
 .cred-row1 ul {
     list-style: none;
 }
 
+/* Formato de cada elemento de la lista de referencias */
+
 .cred-row1 ul li {
     padding: 8px;
 }
+
+/* El mapa del sitio tiene estilo de cuadrados en cada item */
 
 .cred-row1 .site-map ul li {
     padding: 2px;
     list-style: square;
 }
 
+/* Color de la celda al pasar el mouse sobre cada item */
+
 .cred-row1 ul li:hover {
     background-color: rgb(219, 196, 188);
 }
+
+/* Color del item al pasar el mouse sobre cada item */
 
 .cred-row1 .site-map ul li:hover {
     background-color: rgb(205, 188, 219);
 }
 
 /* Responsivines--------------------- */
+
+/* Cambios al reducir la pantalla a menos de 1000px */
 
 @media only screen and (max-width: 1000px) {
     .flex-col-evt {
@@ -412,6 +528,8 @@
         margin-left: 10%;
     }
 }
+
+/* Cambios al reducir la pantalla a menos de 800px */
 
 @media only screen and (max-width: 800px) {
     .flex-col-ch {
@@ -455,6 +573,8 @@
         width: 45%;
     }
 }
+
+/* Cambios al reducir la pantalla a menos de 500px */
 
 @media only screen and (max-width: 500px) {
     .flex-col-ch {
