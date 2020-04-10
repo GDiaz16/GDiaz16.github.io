@@ -31,7 +31,7 @@
 }
 
 .reference {
-    font-family: 'Times New Roman';
+    color: rgb(111, 101, 119);
 }
 
 .news-card h1 {
@@ -45,6 +45,9 @@
     z-index: 1;
 }
 
+.news-card:hover .reference{
+    color: rgb(224, 190, 190);
+}
 /* Lugares------------------------------------------ */
 
 .flex-row-place {
@@ -220,7 +223,6 @@
 /* Selectores */
 
 .evt-info {
-
     opacity: 0;
     transition: opacity 1s;
     background-color: rgba(0, 0, 0, 0.507);
@@ -230,7 +232,6 @@
     left: 0%;
     right: 0%;
     bottom: 0%;
-
 }
 
 .evt-info p {
@@ -329,7 +330,7 @@
     margin: auto;
 }
 
-.cred-col{
+.cred-col {
     display: flex;
     flex-direction: column;
     width: 50%;
@@ -344,8 +345,8 @@
     padding: 8px;
 }
 
-.cred-row1 .site-map ul li{
-    padding: 0px;
+.cred-row1 .site-map ul li {
+    padding: 2px;
     list-style: square;
 }
 
@@ -387,7 +388,6 @@
         height: 40%;
         margin-left: 5%;
     }
-
     .hi:hover .hi-info {
         display: block;
         /*position: absolute; */
