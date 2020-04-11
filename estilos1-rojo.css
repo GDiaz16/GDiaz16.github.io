@@ -69,7 +69,6 @@
     margin: 1%;
     background-color: rgb(221, 218, 213);
     word-wrap: break-word;
-
 }
 
 /* Titulo de cada tarjeta */
@@ -518,7 +517,8 @@ flotante */
 }
 
 /* Firma de autoría */
-.author{
+
+.author {
     border-left: rgb(201, 19, 19);
     border-style: none none none solid;
     border-width: 10px;
@@ -526,6 +526,7 @@ flotante */
     padding-top: 10px;
     background-image: linear-gradient(to right, rgba(245, 185, 185, 0.863), rgb(255, 255, 255));
 }
+
 /* Responsivines--------------------- */
 
 /* Cambios al reducir la pantalla a menos de 1000px */
@@ -582,6 +583,12 @@ flotante */
     }
     .news-card {
         width: 45%;
+    }
+    .cred-col{
+        width: 100%;
+    }
+    .cred-row1 {
+        flex-direction: column-reverse;
     }
 }
 

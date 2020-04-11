@@ -668,6 +668,12 @@ flotante */
         margin-top: 2%;
         margin-bottom: 90%;
     }
+    .cred-col{
+        width: 100%;
+    }
+    .cred-row1 {
+        flex-direction: column-reverse;
+    }
 
 }
 
