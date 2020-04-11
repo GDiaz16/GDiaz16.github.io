@@ -517,6 +517,15 @@ flotante */
     background-color: rgb(205, 188, 219);
 }
 
+/* Firma de autoría */
+.author{
+    border-left: rgb(201, 19, 19);
+    border-style: none none none solid;
+    border-width: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    background-image: linear-gradient(to right, rgba(245, 185, 185, 0.863), rgb(255, 255, 255));
+}
 /* Responsivines--------------------- */
 
 /* Cambios al reducir la pantalla a menos de 1000px */
