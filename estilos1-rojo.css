@@ -1,6 +1,9 @@
 @charset "UTF-8";
 /* Home ---------------------------------------- */
-
+/* Fuente para todo el documento */
+* {
+    font-family: Verdana;
+}
 /* Fila del panel de bienvenida */
 
 .home-row {
