@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <!-- viewport utilizado para permitir el renderizado de la pagina en dispositivos mas pequeños -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Se hace referencia al framework de Bootstrap, sin embargo solo se usa para hacer el navbar
+        Las filas y columnas son hechas con css nativo usando Flex-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+        <!-- Referencia a la hoja de estilos -->
+        <link href="estilos1.css" rel="stylesheet" type="text/css">
+        <!-- Logotipo para la barra de pestañas -->
+        <link rel="shortcut icon" href="Images/icon.jpg" type="image/x-icon">
+        <!-- Titulo de la pagina -->
+        <title>Universo Marvel</title>
+      </head>
+
+<body>
+
+    <div class=" ">
+
+        <!-- Menu de botones -->
+        <div class="row no-gutters">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <!-- Solo se mantiene activo el boton de la pagina actual -->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="page1.html">Universo fisico</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page2.html">Personajes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page3.html">Actividades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page4.html">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page5.html">Créditos</a>
+                        </li>
+                    </ul>
+                    <a class="navbar-brand"><img src="Images/logo-marvel.png" height="20" width="80"> </a>
+                </nav>
+
+            </div>
+        </div>
+
+        <!-- Fila con la descripcion de la pagina -->
+        <div class="cred-row">
+            <h1>El universo al rededor de Marvel</h1>
+            <p>El universo cinematográfico de Marvel se ha desarrollado en muchos lugares diferentes y con historias
+                fascinantes. Por supuesto, estos lugares no están solo en la tierra, están distribuidos por todo el
+                universo. En esta pagina veras algunos de estos lugares, la mayoría de ellos planetas, que han sido
+                importantes ya que de allí han salido personajes que han cambiado el rumbo de la historia y han revelado
+                el lugar de aparición de las gemas del infinito.
+            </p>
+        </div>
+
+        <!-- Tarjetas  -->
+        <div class="flex-row-place">
+            <!-- Columna 1------------------------ -->
+            <div class="flex-col-place">
+
+                <!-- Tarjeta: todas las tarjetas inferiores tienen la misma estructura -->
+                <div class="place-card">
+                    <!-- Imagen -->
+                    <img src="Images/asgard.jpg" width="300" height="150">
+                    <!-- Titulo -->
+                    <h4>Asgard</h4>
+                    <!-- Contenedor con la información de la imagen -->
+                    <div class="place-info">
+                        <p>Fue uno de los Nueve Mundos, y el hogar de los Asgardianos, una poderosa especie
+                            reconocida como una fuerza de paz honorable y valiente que se encargaba de mantener la paz
+                            entre los reinos durante milenios desde los tiempos de Buri hasta llegar a Odín.
+
+                            Pese a que Asgard fue destruido durante el Ragnarök cuando Thor le ordenó a Loki resucitar a
+                            Surtur para matar a Hela, Thor aún así pudo trasladar a los Asgardianos sobrevivientes a la
+                            Tierra, donde formaron Nuevo Asgard.</p>
+                        <!-- Fuente de la información -->
+                        <div class="btn-source"> <a href="https://marvelcinematicuniverse.fandom.com/es/wiki/Asgard">Ver
+                                fuente</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta -->
+                <div class="place-card">
+                    <img src="Images/sanctum-sanctorum.jpeg" width="300" height="150">
+                    <h4>Sanctum Sanctorum</h4>
+                    <div class="place-info">
+                        <p>El Sanctum Sanctorum es una de las tres bases de los Maestros de las Artes Místicas junto con
+                            el London Sanctum y el Hong Kong Sanctum. Ubicado en la ciudad de Nueva York, se usa para
+                            almacenar y asegurar artículos místicos como el Cetro Oscuro y la Capa de Levitación. Doctor
+                            Strange y Wong fueron los maestros del Santuario de Nueva York desde 2017 hasta su muerte en
+                            2018 en el Snap de Thanos, aunque luego fueron restaurados en 2023 durante el Blip.</p>
+                        <div class="btn-source"> <a
+                                href="https://marvelcinematicuniverse.fandom.com/wiki/New_York_Sanctum">Ver
+                                fuente</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta -->
+                <div class="place-card">
+                    <img src="Images/sakaar.jpg" width="300" height="150">
+                    <h4>Sakaar</h4>
+                    <div class="place-info">
+                        <p>Es un planeta basurero artificial creado por el Gran Maestro y rodeado de numerosos agujeros
+                            de gusano. Es el planeta natal de los Sakaarianos y de muchas otras especies varadas en el
+                            planeta desde diferentes partes del cosmos.</p>
+                        <div class="btn-source"> <a href="https://marvelcinematicuniverse.fandom.com/es/wiki/Sakaar">Ver
+                                fuente</a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Tarjeta -->
+                <div class="place-card">
+                    <img src="Images/vormir.png" width="300" height="150">
+                    <h4>Vormir</h4>
+                    <div class="place-info">
+                        <p>Es un planeta remoto y árido, que se encuentra en el centro de la existencia Celestial, donde
+                            se custodiaba la Gema del Alma.</p>
+                        <div class="btn-source"> <a href="https://marvelcinematicuniverse.fandom.com/es/wiki/Vormir">Ver
+                                fuente</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta -->
+                <div class="place-card">
+                    <img src="Images/hala.jpg" width="300" height="150">
+                    <h4>Hala</h4>
+                    <div class="place-info">
+                        <p>Hala era un planeta ubicado en la Gran Nube de Magallanes que rodea la estrella Pama. El
+                            planeta tenía una mayor gravedad y una mayor concentración de nitrógeno en la atmósfera en
+                            comparación con la Tierra. El planeta era el hogar de dos especies nativas inteligentes: los
+                            Kree de piel azul y los Cotati similares a una planta.
+                            <br><br>
+                            Hala fue visitado por una raza pacífica de viajes espaciales conocida como los Skrulls en
+                            busca de socios comerciales. Después de una competencia entre los dos para decidir quién era
+                            digno de un viaje espacial, los Kree perdieron e intentaron matar a los Cotati. Luego
+                            robaron la tecnología de los Skrull y comenzaron una guerra con los Skrulls. </p>
+                        <div class="btn-source"> <a href="https://marvel.fandom.com/wiki/Hala_(Planet)">Ver
+                                fuente</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta -->
+                <div class="place-card">
+                    <img src="Images/Nidavellir.png" width="300" height="150">
+                    <h4>Nidavellir</h4>
+                    <div class="place-info">
+                        <p>Es una estrella de neutrones y uno de los Nueve Mundos, orbitado por una megaestructura de
+                            anillos múltiples, que sirvió como el hogar de los Enanos.</p>
+                        <div class="btn-source"> <a
+                                href="https://marvelcinematicuniverse.fandom.com/wiki/Nidavellir">Ver
+                                fuente</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta -->
+                <div class="place-card">
+                    <img src="Images/tierra.png" width="300" height="150">
+                    <h4>La Tierra</h4>
+                    <div class="place-info">
+                        <p>También conocida como Midgard, Terra o Planeta C-53, es el tercer planeta del
+                            sistema solar, hogar de los humanos, Inhumanos, Eternos, Desviantes, y varios inmigrantes
+                            Asgardianos y Gibborim. Posee un lugar dentro de los Nueve Mundos, un grupo de cuerpos
+                            planetarios alineados por el nimbo cósmico Yggdrasil, y también es el Reino central
+                            alrededor del cual giran todos los demás. La Tierra orbita alrededor de una sola estrella,
+                            el Sol, y tiene un satélite natural permanente, la Luna.</p>
+                        <div class="btn-source"> <a href="https://marvelcinematicuniverse.fandom.com/es/wiki/Tierra">Ver
+                                fuente</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <!-- Columna 2---------------------------- -->
+            <div class="flex-col-place">
+                <!-- Tarjeta -->
+                <div class="place-card">
+                    <img src="Images/wakanda.jpg" width="300" height="150">
+                    <h4>Wakanda</h4>
+                    <div class="place-info">
+                        <p>Conocido oficialmente como el Reino de Wakanda, es un pequeño país aislado sin salida al mar
+                            ubicado en África, rodeado de montañas y un espeso bosque, cuya tecnología se desarrolló a
+                            niveles abismales desde la aparición de un meteorito de Vibranio hace 2.5 millones de años.
+
+                            Aunque Wakanda le ocultó al mundo sus avances para garantizar la protección del Vibranio, no
+                            obstante, el Rey T'Challa decidió rechazar el gobierno aislacionista y abrió Wakanda para
+                            ayudar a otras naciones.</p>
+                        <div class="btn-source"> <a
+                                href="https://marvelcinematicuniverse.fandom.com/es/wiki/Wakanda">Ver
+                                fuente</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta -->
+                <div class="place-card">
+                    <img src="Images/titan.png" width="300" height="150">
+                    <h4>Titan</h4>
+                    <div class="place-info">
+                        <p>Siendo el hogar de una raza epónima de seres, Titán una vez fue un mundo rico y exuberante.
+                            Sin embargo, estaba plagado de superpoblación, lo que causó un drenaje en sus recursos y
+                            mandó a la raza de Titanes a precipitarse hacia un cataclismo social. Thanos propuso matar
+                            al azar a la mitad de la población del planeta como una forma de preservar sus recursos
+                            finitos, pero su plan fue rechazado por ser demasiado extremista, y Thanos fue considerado
+                            un loco. La catástrofe pronosticada impactó fuertemente a Titán, causando la extinción
+                            masiva de la mayoría de las formas de vida del planeta, con Thanos como el único
+                            superviviente.
+                            <br><br>
+                            Titán pasó de ser un mundo verde y azul a uno marrón y quemado, cuya atmósfera eventualmente
+                            fue devastada por tormentas eléctricas con los restos destruidos de la sociedad de Titán,
+                            cubriendo su superficie. Incluso su luna no se libró, tomando una apariencia similar. En una
+                            escala planetaria, Titán quedó a ocho grados de su eje con su atracción gravitatoria por
+                            todos lados. </p>
+                        <div class="btn-source"> <a
+                                href="https://marvelcinematicuniverse.fandom.com/es/wiki/Tit%C3%A1n">Ver
+                                fuente</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta -->
+                <div class="place-card">
+                    <img src="Images/morag.jpg" width="300" height="150">
+                    <h4>Morag</h4>
+                    <div class="place-info">
+                        <p>Es un planeta oceánico situado en la Galaxia de Andrómeda en la Estrella Binaria Eclipsante.
+                            Algunos habitantes de este planeta fueron los roedores Orloni y criaturas acuáticas
+                            similares a un cocodrilo.
+                            <br><br>
+                            Hace miles de años, Morag fue el hogar de una civilización avanzada y floreciente, que fue
+                            devastada por una catástrofe del calentamiento global. En algún momento antes de su
+                            desaparición, los habitantes de Morag construyeron un templo para custodiar el Orbe, un
+                            artefacto que contenía la Gema del Poder. Después del calentamiento global, Morag quedó
+                            completamente cubierto de océanos. Sin embargo, cada 300 años, el mar bajaba y la Bóveda del
+                            Templo se volvía accesible</p>
+                        <div class="btn-source"> <a href="https://marvelcinematicuniverse.fandom.com/es/wiki/Morag">Ver
+                                fuente</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta -->
+                <div class="place-card">
+                    <img src="Images/xandar.jpg" width="300" height="150">
+                    <h4>Xandar</h4>
+                    <div class="place-info">
+                        <p>Xandar es el mundo natal de los Xandarianos y para muchas otras especies, asi como la capital
+                            del
+                            Imperio Nova con una población de doce mil millones. Xandar esta ubicado en la galaxia de
+                            Andrómeda en la estrella binaria eclipsante M31V J00442326 + 4127082. Xandar orbita
+                            alrededor de tres soles. El planeta fue diezmado por Thanos para obtener la Piedra de
+                            Poder.</p>
+                        <div class="btn-source"> <a href="https://marvelcinematicuniverse.fandom.com/wiki/Xandar">Ver
+                                fuente</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta -->
+                <div class="place-card">
+                    <img src="Images/Knowhere.jpg" width="300" height="150">
+                    <h4>Knowhere</h4>
+                    <div class="place-info">
+                        <p>Es la cabeza cortada de un Celestial, la sede del Museo del Coleccionista y lugar donde se
+                            encuentra la colomia minera de Exitar.
+                            <br><br>
+                            Hace cientos de años, el Grupo Tivan estableció operaciones mineras en la cabeza decapitada
+                            de un Celestial para cosechar la valiosa médula, tejido cerebral, y el líquido
+                            cefalorraquídeo de ella. La ausencia de normas y reglamentos volvió a Knowhere en un refugio
+                            seguro para aquellos que estaban fuera de la ley</p>
+                        <div class="btn-source"> <a
+                                href="https://marvelcinematicuniverse.fandom.com/es/wiki/Knowhere">Ver
+                                fuente</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta -->
+                <div class="place-card">
+                    <img src="Images/Ego-The-Living-Planet-MCU.jpg" width="300" height="150">
+                    <h4>Ego, el planeta viviente</h4>
+                    <div class="place-info">
+                        <p>El origen de Ego, el Planeta Viviente, es el mismo que el origen de cualquier otro planeta,
+                            acumulación durante años de gases y materia cósmica. Pero, al contrario de otros planetas,
+                            Ego desarrolló consciencia e inteligencia. Existen teorías sobre como adquirió Ego su
+                            inteligencia, algunas ideadas por él mismo y otras solamente son teorías, como la que la
+                            inteligencia de Ego proviene de la fusión entre un planeta y un ser vivo inteligente, ni que
+                            su origen es el de la unión de un ser superhumano con la esencia del planeta, como fue el
+                            caso de Gea con la Tierra. Todas estas teorías son falsas o erróneas, siendo el origen de
+                            Ego un misterio. Pese a todo, la más aceptada es que la inteligencia de Ego fue
+                            desarrollándose con el paso de los siglos, siguiendo el mismo proceso que el seguido por el
+                            grupo de estrellas que adquirieron consciencia, convirtiéndose en la miembro de los
+                            Defensores conocida como Nube. Ego se formó en la conocida como la Galaxia Negra, que se
+                            encuentra cerca de la Vía Láctea, o incluso en su interior</p>
+                        <div class="btn-source"> <a href="http://www.enciclopediamarvel.com/card/1183">Ver
+                                fuente</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tarjeta -->
+                <div class="place-card">
+                    <img src="Images/avengers-manor.jpg" width="300" height="150">
+                    <h4>Mansión de los Vengadores</h4>
+                    <div class="place-info">
+                        <p>Es una casa de de tres plantas, situada en el 890 de la Quinta Avenida, en la isla de
+                            Manhattan, en la ciudad de Nueva York. La casa fue construida en 1932 por encargo del
+                            industrial Howard Stark, para que fuera su residencia y la de su familia mientras vivieran
+                            en Manhattan. La Mansión fue donada a los Vengadores por el hijo de Howard, Anthony, que la
+                            había heredado tras el fallecimiento de su padre, Anthony "Tony" Stark fue uno de los
+                            miembros fundadores de los Vengadores bajo la identidad de Iron Man.</p>
+                        <div class="btn-source"> <a
+                                href="https://marvel.fandom.com/es/wiki/Mansi%C3%B3n_de_los_Vengadores">Ver
+                                fuente</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+<!-- Footer de la pagina -->
+    <footer class="page-footer font-small blue">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 foot">© 2020 Copyright:
+            <a href="https://github.com/GDiaz16">Gonzalo Diaz </a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- viewport utilizado para permitir el renderizado de la pagina en dispositivos mas pequeños -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Se hace referencia al framework de Bootstrap, sin embargo solo se usa para hacer el navbar
+        Las filas y columnas son hechas con css nativo usando Flex-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <!-- Referencia a la hoja de estilos -->
+    <link href="estilos1.css" rel="stylesheet" type="text/css">
+    <!-- Logotipo para la barra de pestañas -->
+    <link rel="shortcut icon" href="Images/icon.jpg" type="image/x-icon">
+    <!-- Titulo de la pagina -->
+    <title>Universo Marvel</title>
+</head>
+
+<body>
+    <!-- Encabezado en todas las paginas --------------------------------------------------->
+
+
+
+    <!-- Menu de botones -->
+    <div class="row no-gutters">
+        <div class="col-md-12">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page1.html">Universo fisico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page2.html">Personajes</a>
+                    </li>
+                    <!-- Solo se mantiene activo el botón de la pagina actual -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="page3.html">Actividades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page4.html">Historia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="page5.html">Créditos</a>
+                    </li>
+                </ul>
+                <a class="navbar-brand"><img src="Images/logo-marvel.png" height="20" width="80"> </a>
+            </nav>
+
+        </div>
+    </div>
+    <!-- Fila con la descripción de la pagina -->
+    <div class="cred-row">
+        <h1>Actividades</h1>
+        <p>En esta sección encontrarás las actividades que se llevan a cabo en varios lugares del universo por los
+            héroes y villanos de Marvel. <br>
+            Para ver la fuente de la imagen, con más información presione el boton "Ver" en cada tarjeta <br>
+            <!-- Ancla a otra parte de la pagina -->
+            <a href="#ancla1">Mira aquí los eventos que ocurrieron en el espacio</a>
+        </p>
+    </div>
+    <!-- Subtitulo -->
+    <div class="cred-row">
+        <span>
+            <h3>Eventos que ocurrieron en La Tierra</h3>
+            <hr>
+        </span>
+
+    </div>
+    <div class="flex-row-evt">
+        <div class="flex-col-evt">
+            <!-- Tarjeta: todas las tarjetas inferiores tienen la misma estructura -->
+            <div class="evt-card">
+                <!-- Imagen -->
+                <img src="Images/black-panther-event.gif" width="300" height="150">
+                <!-- Panel de información  -->
+                <div class="evt-info">
+                    <!-- Titulo de la tarjeta -->
+                    <h4>Black Panther</h4>
+                    <!-- Contenido de la tarjeta -->
+                    <p>El heredero del trono Wakandiano debe luchar contra otro aspirante al trono que pretende llevar
+                        la tecnologia de Wakanda a todas las comunidades negras del mundo para que estas inicien una
+                        guerra contra quienes siempre los han oprimido. </p>
+                    <!-- Fuente de la información -->
+                    <div class="btn-source"> <a
+                            href="https://gfycat.com/fr/jollybesthammerheadshark-black-panther-vs-killmonger-final-fight-scene">Ver
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="flex-col-evt">
+
+            <div class="evt-card">
+                <img src="Images/antman-event.gif" width="300" height="150">
+                <div class="evt-info">
+                    <h4>Ant Man</h4>
+                    <p>Como prueba de sus habilidades para el doctor Hank Pym, Scott Lang entra en la mansión de los
+                        vengadores para robar un articulo que servirá para detener los planes de Darren Cross de vender
+                        un traje similar al de Ant Man a militares extranjeros. </p>
+                    <div class="btn-source"> <a href="https://giphy.com/gifs/blast-critics-1obfwJfuA9Uru">Ver
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="flex-row-evt">
+        <div class="flex-col-evt">
+
+            <div class="evt-card">
+                <img src="Images/spiderman-event.gif" width="300" height="150">
+                <div class="evt-info">
+                    <h4>Peter Parker</h4>
+                    <p>El joven Spiderman continua su día a día cuidando a la ciudad de Nueva York del crimen, esta vez
+                        de uno de los socios de Adrian Toomes, quien esta robando tecnologia alienigena Chitauri para
+                        crear armamento. Toomes logra escapar y por accidente una de sus armas parte el ferry por la
+                        mitad.
+                    </p>
+                    <div class="btn-source"> <a
+                            href="https://www.sopitas.com/entretenimiento/cine/chavito-audaz-spider-man-regreso-casa/">Ver</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="flex-col-evt">
+
+            <div class="evt-card">
+                <img src="Images/iron-man-event.gif" width="300" height="150">
+                <div class="evt-info">
+                    <h4>Tony Stark</h4>
+                    <p>Iron Man se enfrenta a un poderoso terrorista conocido como El Mandarin, sin embargo descubre que
+                        quien esta detrás es un cientifico, Aldrich Killian, quien ha creado un suero que lo vuelve
+                        prácticamente indestructible. </p>
+                    <div class="btn-source"> <a
+                            href="http://artefactoscomicmanga.blogspot.com/2018/02/avengers-infinity-war-trailer-1-y-2_6.html">Ver
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="flex-row-evt">
+        <div class="flex-col-evt">
+            <div class="evt-card">
+                <img src="Images/capitan-america-event.gif" width="300" height="150">
+                <div class="evt-info">
+                    <h4>Capitán América</h4>
+                    <p>Steven Rogers descubre que Hydra se ha infiltrado en S.H.I.E.L.D y han estado ideando un plan
+                        para crear naves guiadas por satelite para asesinar a todas aquellas personas que consideran
+                        pueden generar resistencia a su futuro régimen. Por lo tanto se ve obligado a huir para tratar
+                        de detener este plan.</p>
+                    <div class="btn-source"> <a
+                            href="https://www.cinepremiere.com.mx/chris-evans-escena-elevador-winter-soldier.html">Ver
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="flex-col-evt">
+
+            <div class="evt-card">
+                <img src="Images/dr-strange-event.gif" width="300" height="150">
+                <div class="evt-info">
+                    <h4>Dr Strange</h4>
+                    <p>Stephen Strange se encuentra a Thor y a Loki en La Tierra y los transporta a su recinto, allí los
+                        interroga por la razon que los hace estar aquí, ellos le dicen que están buscando a su padre
+                        Odin, asi que Strange abre un portal hacia Noruega y los envía con él. </p>
+                    <div class="btn-source"> <a href="https://gfycat.com/fr/jampackedbriefamericancreamdraft">Ver
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="cred-row">
+        <span id="ancla1">
+            <h3>Eventos que ocurrieron en otros planetas</h3>
+            <hr>
+
+        </span>
+
+    </div>
+
+
+
+    <div class="flex-row-evt">
+        <div class="flex-col-evt">
+
+
+            <div class="evt-card">
+                <img src="Images/guardianes-de-la-galaxia-event.gif" width="300" height="150">
+                <div class="evt-info">
+                    <h4>Guardianes de la Galaxia</h4>
+                    <p>Los ahora famosos Guardianes de la Galaxia han sido contratados por Ayesha, líder de la raza
+                        soberana para cuidar unos baterías de un monstruo interdimensional. Lo logran pero Rocket roba
+                        una de las baterías, haciendo que Ayesha envié una flota de drones a perseguirlos para
+                        asesinarlos.</p>
+                    <div class="btn-source"> <a
+                            href="https://gfycat.com/poisedvalidbasenji-guardians-of-the-galaxy-vol-2-first-trailer">Ver
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="flex-col-evt">
+
+            <div class="evt-card">
+                <img src="Images/thanos-event.gif" width="300" height="150">
+                <div class="evt-info">
+                    <h4>Thanos</h4>
+                    <p>En un lugar remoto del universo, Thanos espera que sus sirvientes, Loki y Ronan el destructor
+                        encuentren las gemas del infinito para él, sin embargo sus planes se ven retrasados ya que ellos
+                        lo traicionan, asi que decide ir el mismo a conseguirlas. </p>
+                    <div class="btn-source"> <a
+                            href="http://www.4ye.co.uk/2015/08/glove-up-thanos-avengers-age-of-ultron-gauntlet-scene-is-now-online/">Ver
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="flex-row-evt">
+        <div class="flex-col-evt">
+
+            <div class="evt-card">
+                <img src="Images/thor-event.gif" width="300" height="150">
+                <div class="evt-info">
+                    <h4>Thor</h4>
+                    <p>Thor y Loki descubren que tienen una hermana mayor, Hela, que es mucho mas poderosa que ellos.
+                        Hela ha estado encerrada por su padre durante milenios, pero con la muerte de este, ella escapa
+                        y llega a Asgard para retomar su reino, por lo tanto Thor y Loki deciden desatar el Ragnarok,
+                        destruyendo Asgard lograran vencer a Hela. </p>
+                    <div class="btn-source"> <a href="https://www.pinterest.cl/pin/737323770218408124/">Ver
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="flex-col-evt">
+
+            <div class="evt-card">
+                <img src="Images/hulk-event.gif" width="300" height="150">
+                <div class="evt-info">
+                    <h4>Thor vs Hulk</h4>
+                    <p>En el transcurso de su viaje desde La Tierra hacia Asgard, Hela intercepta a Thor y a Loki en su
+                        camino por el Bifrost y los envía a otro planeta. Terminan cayendo en Sakaar, donde Thor es
+                        capturado y vendido para pelear como gladiador en una arena, al entrar allí se encuentra que el
+                        campeón y ahora su rival es su compañero Hulk. </p>
+                    <div class="btn-source"> <a
+                            href="https://gfycat.com/downrightrespectfulaphid-superhero-all-tags-kenrrytv-ragnarok">Ver
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <footer class="page-footer font-small blue">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 foot">© 2020 Copyright:
+            <a href="https://github.com/GDiaz16">Gonzalo Diaz </a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+
+</body>
+
+</html>
