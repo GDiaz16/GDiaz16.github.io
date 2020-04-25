@@ -577,6 +577,18 @@ flotante */
 .cred-row1 .site-map ul li:hover a {
     color: var(--color2);
 }
+
+/* Seleccionar mapa del sitio rojo */
+.red-map{
+    display: none;
+}
+/* Ocultar el otro mapa del sitio */
+.blue-map{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
 /* Firma de autoría */
 .author{
     border-left: rgb(73, 61, 73);
@@ -675,7 +687,11 @@ flotante */
     .cred-row1 {
         flex-direction: column-reverse;
     }
-
+    /* Cambios en los creditos */
+    .blue-map{
+        width: 100%;
+    }
+    
 }
 
 /* Cambios al reducir la pantalla a menos de 500px */

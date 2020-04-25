@@ -1,6 +1,8 @@
 @charset "UTF-8";
 /* Home ---------------------------------------- */
+
 /* Fuente para todo el documento */
+
 * {
     font-family: Verdana;
 }
@@ -470,7 +472,6 @@ flotante */
 
 /* Creditos-------------------------- */
 
-
 /* Fila de referencias */
 
 .cred-row1 {
@@ -520,6 +521,20 @@ flotante */
 
 .cred-row1 .site-map ul li:hover {
     background-color: rgb(205, 188, 219);
+}
+
+/* Seleccionar mapa del sitio rojo */
+
+.red-map {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+/* Ocultar el otro mapa del sitio */
+
+.blue-map {
+    display: none;
 }
 
 /* Firma de autoría */
@@ -590,11 +605,15 @@ flotante */
     .news-card {
         width: 45%;
     }
-    .cred-col{
+    .cred-col {
         width: 100%;
     }
     .cred-row1 {
         flex-direction: column-reverse;
+    }
+    /* Cambios en los creditos */
+    .red-map {
+        width: 100%;
     }
 }
 
